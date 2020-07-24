@@ -2,11 +2,12 @@
 <html>
 
 <head>
+    <title>Apartment Template</title>
+    <meta name="description" content="Free Web template for those who are renting an apartment">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon' />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,27 +15,26 @@
 
     <!-- navigation bar -->
 
-    <div class="container-fluid sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#"><svg class="bi bi-gem" width="2em" height="2em" viewBox="0 0 16 16" fill="#EB8258" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M3.1.7a.5.5 0 01.4-.2h9a.5.5 0 01.4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 01-.8 0L.1 5.3a.5.5 0 010-.6l3-4zm11.386 3.785l-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004l.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495l5.062-.005L8 13.366 5.47 5.495zm-1.371-.999l-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l2.92-.003 2.193 6.82L1.5 5.5zm7.889 6.817l2.194-6.828 2.929-.003-5.123 6.831z" clip-rule="evenodd" />
-                </svg></a>
-            <div class="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
-                    <a class="nav-item nav-link" href="#about">About</a>
-                    <a class="nav-item nav-link" href="#book-your-trip"><strong>Book Your trip</strong></a>
-                    <a class="nav-item nav-link" href="#amenities">Amenities</a>
-                    <a class="nav-item nav-link" href="#photos">Photos</a>
-                    <a class="nav-item nav-link" href="#testemonials">Testemonials</a>
-                    <a class="nav-item nav-link" href="#contact">Contact us</a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><svg class="bi bi-gem" width="2em" height="2em" viewBox="0 0 16 16" fill="#EB8258" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3.1.7a.5.5 0 01.4-.2h9a.5.5 0 01.4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 01-.8 0L.1 5.3a.5.5 0 010-.6l3-4zm11.386 3.785l-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004l.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495l5.062-.005L8 13.366 5.47 5.495zm-1.371-.999l-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l2.92-.003 2.193 6.82L1.5 5.5zm7.889 6.817l2.194-6.828 2.929-.003-5.123 6.831z" clip-rule="evenodd" />
+            </svg></a>
+        <div class="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#book-your-trip"><strong>Book Your trip</strong></a>
+                <a class="nav-item nav-link" href="#amenities">Amenities</a>
+                <a class="nav-item nav-link" href="#photos">Photos</a>
+                <a class="nav-item nav-link" href="#testemonials">Testemonials</a>
+                <a class="nav-item nav-link" href="#contact">Contact us</a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
 
     <!-- header image -->
 
@@ -87,6 +87,9 @@
         <hr>
         <div class="container">
             <div class="row">
+
+                <!-- dates -->
+
                 <div class="container col-md-6">
                     <h4 class="text-center">Check-in</h4>
                     <div class="input-group date" data-provide="datepicker">
@@ -108,15 +111,67 @@
                 </div>
             </div>
             <br>
-            <div class="container">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
-            </div>
+            <div class="row">
+                <!-- number of adults and children -->
 
+                <div class="container col-md-6">
+                    <h4 class="text-center">Number of adults</h4>
+
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Adults</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                            <option value="6">Six</option>
+                            <option value="7">Seven</option>
+                            <option value="8">Eight</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="container col-md-6">
+                    <h4 class="text-center">Number of Children</h4>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Children</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                            <option value="6">Six</option>
+                            <option value="7">Seven</option>
+                            <option value="8">Eight</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
         <br>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+
 
     </div>
+
+    <br>
+
 
     <!-- amenities -->
 
@@ -190,7 +245,7 @@
 
     <br>
 
-    <!-- carausel -->
+    <!-- photos -->
 
     <div class="container section-title" id="photos">
         <br>
@@ -297,7 +352,7 @@
 
                 <div class="col-md-6">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">11000 Belgrade, Serbia</li>
+                        <li class="list-group-item">33101 Miami, Florida</li>
                         <li class="list-group-item">21 Street Lorem Ispum</li>
                         <li class="list-group-item">111 - 222 - 333</li>
                         <li class="list-group-item">Find us on <a href="https://www.facebook.com/" target="_blank">
@@ -332,8 +387,9 @@
             <br>
 
         </div>
-        <div class="container" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19594.738943997658!2d20.44736716242258!3d44.824532206601376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1588800394600!5m2!1ssr!2srs" width="100%" height="360px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="container-fluid">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d114964.3894364903!2d-80.2994994776095!3d25.782545312660435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1593730730752!5m2!1ssr!2srs" width="100%" height="360px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 
@@ -341,12 +397,19 @@
 
     <hr>
 
+    <div class="container-fluid">
+        <p class="text-center">
+            <italic>Made with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-suit-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                </svg> by <a href="https://www.linkedin.com/in/markoskuletic/">Marko Skuletic</a></italic>
+        </p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    
+
+
 </body>
 
 </html>
