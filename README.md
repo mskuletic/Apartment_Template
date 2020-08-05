@@ -18,5 +18,6 @@ Features
 - Minimal & Modern Design
 - - - - - - - - - - -
 Demo link:
-https://apartment-template.netlify.app/
+https://free-apartment-template.netlify.app/
+
 - - - - - - - - - - -
